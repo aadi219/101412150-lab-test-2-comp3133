@@ -1,0 +1,5 @@
+.filter-form-field {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+<div class="filter-form-field">
+    <h4>Filter Missions:</h4>
+    <mat-form-field class="example-form-field">
+    <mat-label>Launch Year</mat-label>
+    <input matInput type="text" [(ngModel)]="launchYearFilter" (input)="onFilterChange()">
+    @if (launchYearFilter) {
+        <button matSuffix mat-icon-button aria-label="Clear" (click)="launchYearFilter=''">
+        <mat-icon>close</mat-icon>
+        </button>
+    }
+    </mat-form-field>
+</div>
