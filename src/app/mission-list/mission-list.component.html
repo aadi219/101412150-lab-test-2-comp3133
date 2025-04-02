@@ -1,0 +1,23 @@
+
+<h1>COMP3133 | Lab Test 2 | SpaceX API </h1>
+<h3>By Aadi Badola (101413150)</h3>
+
+<app-mission-filter (filterChanged)="onFilterChange($event)"></app-mission-filter>
+
+<mat-list>
+    <mat-card *ngFor="let mission of missions" appearance="outlined" class="mission-card" >
+        <img mat-card-image [src]="mission.links.mission_patch_small" width="120px">
+        <mat-card-header>
+            <mat-card-title>{{ mission.mission_name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <h2>{{ mission.launch_year }}</h2>
+            <p>{{ mission.details }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a 
+            [routerLink]="['details/' + mission.flight_number]" routerLinkActive="router-link-active" 
+            mat-button class="btn-details">View Details</a>
+        </mat-card-actions>
+    </mat-card>
+</mat-list>

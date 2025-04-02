@@ -1,0 +1,17 @@
+.mission-card {
+    border-radius: 15px;
+    border-width: 3px;
+    padding: 1.1em;
+    background-color: lightblue;
+    margin-bottom: 1em;
+}
+
+.btn-details {
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 0.8rem;
+}
+.btn-details:hover {
+    background-color:rgb(47, 47, 212);
+}
