@@ -1,0 +1,18 @@
+<div class="details-container">
+    <img [src]="mission?.links?.mission_patch_small">
+    <h2>Mission: {{mission?.mission_name}}</h2>
+    <div class="details-section">
+        <p>Name: {{mission?.mission_name}}</p>
+        <p>Launch Year: {{mission?.launch_year}}</p>
+    </div>
+    <div class="details-section">
+        <h2>Rocket</h2>
+        <p>Name: {{mission?.rocket?.rocket_name}}</p>
+        <p>Type: {{mission?.rocket?.rocket_type}}</p>
+    </div>
+    <div class="details-section">
+        <h2>Launch Details</h2>
+        <p>{{mission?.details}}</p>
+    </div>
+    <a mat-button [routerLink]="['']" routerLinkActive="router-link-active" >Return to List</a>
+</div>
