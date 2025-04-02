@@ -1,0 +1,8 @@
+services:
+  labtest02:
+    container_name: labtest02
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
